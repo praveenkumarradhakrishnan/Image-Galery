@@ -3,13 +3,13 @@ import { arr } from "./components/Gallery"
 function App(){
   return(
   <div>
-  <div class="frame">
-      <h1 class="heading">IMAGE GALLERY</h1>
-      <div class="gallery">
+  <div className="frame">
+      <h1 className="heading">IMAGE GALLERY</h1>
+      <div className="gallery">
           {
               arr.map(function (item) {
                   return (
-                      <div class="input_img">
+                      <div className="input_img">
                           <Image src={item.src} name={item.name} ></Image>
                       </div>
                   )
